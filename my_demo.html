@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Galaxy Classifier</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      background: #0a0c14; color: white; 
+      max-width: 800px; margin: 0 auto; padding: 2rem;
+    }
+    h1 { text-align: center; color: #00e5ff; }
+    table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
+    th, td { padding: 12px; text-align: center; border: 1px solid #333; }
+    th { background: #1a1a3e; color: #00e5ff; }
+    .highlight { color: #34d399; font-weight: bold; font-size: 1.2em; }
+  </style>
+</head>
+<body>
+  <h1>🔭 Galaxy Morphology Classification</h1>
+  <p style="text-align:center; color:#888;">ResNet-50 + LoRA Fine-Tuning | TMI-102 PaAC IIT Roorkee</p>
+  
+  <h2>📊 Results</h2>
+  <table>
+    <tr><th>Model</th><th>Parameters</th><th>Accuracy</th><th>Time/Epoch</th></tr>
+    <tr><td>Frozen Baseline</td><td>2K</td><td>55.67%</td><td>9s</td></tr>
+    <tr><td>Full Fine-Tune</td><td>25.6M</td><td class="highlight">97.28%</td><td>146s</td></tr>
+    <tr><td>LoRA (r=4)</td><td>409K</td><td class="highlight">94.77%</td><td>48s</td></tr>
+  </table>
+  
+  <!-- TODO: Add your own sections below! Ideas: -->
+  <!-- - Your name and roll number -->
+  <!-- - Grad-CAM images (save as .png and embed) -->
+  <!-- - A "What I learned" section -->
+  <!-- - Links to your notebooks -->
+  
+  <h2>👩‍🔬 About Me</h2>
+<p>My name is Shikha Kheni, and I am a BS-MS Physics
+student at IIT Roorkee.</p>
+
+<h2>📚 What I Learned</h2>
+<p>I learned how transfer learning and fine-tuning can
+help classify galaxies. I also explored model accuracy
+and the trade-off between performance and efficiency.</p>
+  
+  <h2>🔬 Key Finding</h2>
+  <p>LoRA achieves <strong>94.77% accuracy</strong> with only <strong>1.6%</strong> of the 
+  trainable parameters — a 98.4% reduction with only 2.5% accuracy drop.</p>
+  
+  <footer style="text-align:center; color:#555; margin-top:3rem; padding-top:1rem; border-top:1px solid #333;">
+    TMI-102 · PaAC IIT Roorkee · 2026
+  </footer>
+</body>
+</html>
